@@ -1,0 +1,51 @@
+
+/* importing fonts from google
+    fonts.google.com
+    fonts name open Sans select light 300 and regular 400 then click Embed and import style format */
+
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+    /* A03 */
+    
+/* Rashed Qazizada */
+
+/* reset everything */
+
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../public/image/backgroundImage.png);
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  background: rgb(63, 66, 63);
+  line-height: 1.6;
+} */
+
+
+
+
+
+
+
+
+
+/* 
+
+#img {
+  display: block;
+  margin: auto;
+  height: 128px;
+  width: 128px;
+  padding: 2rem;
+}
+
+#canvas {
+  display: block;
+  margin: 2rem auto;
+  width: 540px;
+  height: 540px;
+} */

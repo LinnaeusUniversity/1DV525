@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: rgb(63, 66, 63);
+  line-height: 1.6;
+  background: url(../image/bgPic.png)no-repeat center rgba(232, 235, 64, 0.972);
+  overflow: hidden;
+
+}
+/*************************** */
+.ui.card { 
+  position: absolute;
+}
+#header { 
+font-weight: 900;
+font-size: 30px;
+color: inherit;
+background: rgb(155, 158, 155);
+} 
+/* Quiz */
+h1 {
+  margin-top: 10px;
+  text-align:center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+}
+body {
+  text-align:center;
+  /* background-color: inherit; */
+  
+}
+
+#radioBtnAlternatives {
+  display: block; 
+  color:  rgb(24, 29, 24);
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 10px;
+
+}
+
+#answerSection {
+  text-align: center;
+}
+
+.radios {
+  padding: 5px;
+  font-size: 20px;
+ 
+}
+
+input[type=text] {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  box-sizing: border-box;
+  padding: 15px;
+  /* text-align: justify; */
+}
+
+
+
+#btn {
+  margin-bottom: 10px;
+  padding: 15px;
+  color: red;
+}
+
+#timer {
+  font-size: 20px;color: red;
+}
+/* memory game */
+
+h1 {
+  margin-top: 10px;
+  text-align:center;
+}
+#memory-images img {
+  height: 60px;
+  width: 60px;
+}
+
+#memory-images .removed {
+  visibility: hidden
+}
+
+#timer {
+  text-align: center
+}
+
+/* chat */
+.ui.form textarea:not([rows]) {
+  height: 4em;
+  min-height: 1em;
+  max-height: 4em;
+}
+
+#chat-messagesList {
+  overflow: auto;
+  height: 200px;
+}
+
+/* Hangman */
