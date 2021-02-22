@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The JavaScript</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <nav class="navbar top">
+    <ul>
+      <li>
+      <li> <a href="/web/page.html">Home</a> </li>
+      <li> <a href="/web/image.html">Image</a> </li>
+      <li> <a href="/web/form.html">Form</a> </li>
+      <li> <a href="/web/typography.htm"> Typography</a> </li>
+      <li> <a href="/web/table.html">Table</a> </li>
+      <li> <a href="/web/column2.html">Column2</a> </li>
+      <li> <a href="/web/column3.html">column3</a> </li>
+      <li> <a href="/web/responsive.html">Responsive</a> </li>
+      <li> <a href="/web/JavaScript.html">javascript</a> </li>
+
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <article class="javaScript-class">
+      <!-- Random fruit -->
+      <aside class="randomaized-words">
+        <button class="big-button bg-primary" onclick="getRandomWordFunction()">Click for Random fruit</button>
+
+        <!-- Randomized words -->
+        <h1 class="javaScript-secondary-class">Uppercase</h1>
+        <h1 class="btn" id="fruit-lists-uppercase"></h1><br>
+
+        <h1 class="javaScript-secondary-class">Lowercase</h1>
+        <h1 class="btn" id="fruit-lists-lowercase"></h1><br><br>
+        <!-- Number of charaters -->
+        <h1 class="javaScript-secondary-class">Contains Characters</h1>
+        <h1 class="btn" id="string-length"></h1>
+        <h1 class="javaScript-secondary-class">Contains Vowels</h1>
+        <h1 class="btn" id="string-vowels"></h1>
+        <h1 class="javaScript-secondary-class">Contains Consonants</h1>
+        <h1 class="btn" id="string-consonants"></h1>
+        <!-- <h1 class="javaScript-secondary-class">If charaters exists</h1> -->
+        <!-- <h1 class="btn" id="answer"></h1> -->
+
+      </aside>
+      <aside class="randomaized-words">
+        <br><br> <label class="javaScript-secondary-class" for="cname">Guess a charater below</label><br>
+        <br> <input type="text" id="get-char" required minlength="1" maxlength="1">
+
+        <!-- <button class="big-button bg-primary" onclick="ifCharachterExsits()">Guess a Character</button> -->
+        <!-- <h1 class="javaScript-secondary-class">Randomized Fruit </h1>
+        <h1 class="btn" id="randomizedWord"></h1><br><br> -->
+        <h1 class="javaScript-secondary-class">Does the char exists</h1>
+        <h1 class="btn" id="answer"></h1><br><br>
+        <h1 class="javaScript-secondary-class">Randomized Fruit </h1>
+        <h1 class="btn" id="randomizedWord"></h1><br><br>
+
+        <h1 class="javaScript-secondary-class">Character indices </h1>
+        <h1 class="btn" id="charaters-hit"></h1><br><br>
+
+        <h1 class="javaScript-secondary-class"> Character appeared in </h1>
+        <h1 class="btn" id="characters-count"></h1><br><br>
+
+
+      </aside>
+
+    </article>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,603 @@
+/* importing fonts from google
+    fonts.google.com
+    fonts name open Sans select light 300 and regular 400 then click Embed and import style format */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+/* A01 */
+/* Rashed Qazizada */
+
+/* reset everything */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #333;
+  color: #333;
+  line-height: 1.6;
+}
+/* Remving the bullets */
+ul {
+  list-style: none;
+}
+a {
+  color: #333;
+  font-size: 22px;
+  text-decoration: none;
+}
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  background-color: #101411;
+  color: #ffffff;
+  width: 100%;
+  /* common navbar height */
+  height: 70px;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  padding: 10px 0px 5px 0px;
+  position: fixed;
+  top: 0px;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: #28a745 solid 2px;
+}
+
+/* Header */
+.hero {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  /* The height of hero should be 100vh to cover entire viewport */
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+}
+
+/* Content  */
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90%;
+  padding: 0px 20px;
+}
+.hero .content h4 {
+  font-size: 15px;
+  color: yellow;
+}
+.hero .content h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(68, 77, 192);
+}
+.hero .content h4 a {
+  font-size: 15px;
+  color: #ffffff;
+}
+.hero .content p {
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.8rem;
+  /* color:  */
+  font-weight: 600;
+  /* 40px top 0 left & right 30px bottom */
+  margin: 40px 0 30px;
+  padding: 8px;
+  color: rgb(148, 102, 17);
+}
+.hero * {
+  /* z-index: -10; */
+  z-index: 10;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  /* color: black; */
+  background-color: rgb(204, 190, 190);
+  border: none;
+  border-radius: 5px;
+  margin: 5ps;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.bg-dark {
+  background: #333;
+  color: #ffffff;
+}
+.bg-light {
+  background: rgb(94, 86, 86);
+  color: #ffffff;
+}
+/* Article  */
+
+/* Flex columns */
+.bg-primary {
+  background: #4f5a50;
+  color: #ffffff;
+}
+.bg-secondary {
+  background: #5a5b5c;
+  color: #ffffff;
+}
+.bg-secondaryfooter {
+  background: #4c657c;
+  color: #474242;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  /* This way i can avoid stretching the picture 
+      object-fit this property fixes the picture
+        takes the whole area  but it is not stretch out */
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+.flex-columns h1 {
+  font-size: 50px;
+  font-weight: 90px;
+}
+.flex-columns h2 {
+  font-size: 30px;
+  font-weight: 70px;
+}
+
+.flex-columns p {
+  font-size: 25px;
+  margin: 20px 0;
+  text-align: justify;
+}
+.flex-columns .column-2 p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+.flex-columns .column-2 h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+  border: red solid 2px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+  margin-top: 80px;
+  border: honeydew solid 1px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: greenyellow;
+}
+
+/* Image  */
+
+.image {
+  background: url("../img/image.jpg") no-repeat center center/cover;
+  height: 100vh;
+
+  width: 100%;
+  color: #ffffff;
+}
+
+.flash {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 70px;
+}
+.image-border {
+  background: rgb(71, 66, 66);
+  overflow: auto;
+  border: solid red 3px;
+  width: 700px;
+  padding-left: 10px;
+  text-align: justify;
+  margin: 20px 20px 40px 20px;
+}
+.image-border h1 {
+  margin-top: 20px;
+}
+.img2 {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.flash-columns .column .column-1,
+.flash-columns .column .column-2 {
+  height: 50%;
+  width: 80%;
+  border-radius: 20px;
+  margin: 50px;
+}
+
+.flash-columns .column .column-1 img {
+  margin: 50px;
+  border-radius: 40px;
+}
+.flash-columns p {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: justify;
+}
+.flash-columns .column-2 p {
+  font-size: 18px;
+  line-height: inherit;
+  color: rgb(197, 221, 197);
+  margin: 10px 0;
+}
+.flash-columns .column-2 h1 {
+  font-size: 30px;
+  color: chocolate;
+  margin: 20px 0;
+}
+
+/* Table section */
+table {
+  font-family: inherit;
+  border-collapse: collapse;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px 30px 60px 40px;
+}
+
+td,
+th {
+  border: 3px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #a89999;
+}
+tr:nth-child(odd) {
+  background-color: rgb(158, 157, 121);
+}
+.table {
+  background-color: rgb(153, 152, 142);
+  height: 80vh;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  border: gold solid 2px;
+  margin: 80px 40px 40px 40px;
+}
+.table h2 {
+  color: inherit;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.aside-header .column-2 h1 {
+  font-size: 30px;
+  color: chocolate;
+
+  margin: 20px 0px;
+}
+.row .aside-weather h1,
+h2,
+p {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* column2 */
+
+.aside-main {
+  display: flex;
+  margin-top: 100px;
+  align-content: center;
+  font-size: 17px;
+}
+.aside-main h1 {
+  padding: 30px 0px 0px 40px;
+  font-size: 25px;
+  color: #fff;
+}
+.aside-left {
+  align-items: left;
+  justify-content: space-evenly;
+  align-content: left;
+  text-align: left;
+  line-height: 2rem;
+  padding: 20px;
+  margin: 0px 0px 10px 0px;
+}
+.aside-right {
+  align-items: center;
+  margin: 0px 0px 0px 10px;
+}
+.aside-top {
+  align-items: left;
+  justify-content: left;
+  align-content: left;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.aside-top h1,
+h4,
+p {
+  padding: 20px;
+}
+.aside-bottom {
+  align-items: left;
+  justify-content: left;
+  align-content: left;
+  text-align: left;
+  margin-top: 10px;
+}
+/* column 3 */
+.column .column-1 .widest-column {
+  height: 100%;
+  width: 100vh;
+}
+
+/* column 3 */
+
+.col3-aside-main-header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border: chocolate solid 2px;
+
+  margin: 80px 10px 20px 10px;
+}
+
+.col3-aside-left {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.col3-aside-left-image {
+  background: url("../img/mamo.jpg") no-repeat center center/cover;
+  /* The height of hero should be 100vh to cover entire viewport */
+  height: 850px;
+  width: 30%;
+  color: #ffffff;
+}
+.col3-aside-widest {
+  width: 50%;
+  padding-top: 10px;
+  text-align: left;
+}
+.col3-aside-widest h1 {
+  text-align: center;
+  padding-top: 5px;
+  color: cornsilk;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.col3-aside-widest p {
+  font-size: 18px;
+  line-height: 2;
+  text-align: justify;
+}
+.col3-aside-right {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.col3-aside-right-image {
+  background: url("../img/showcase2.jpg") no-repeat center center/cover;
+  height: 850px;
+  width: 30%;
+  color: #ffffff;
+}
+
+/* triptych asides */
+.triptych-main {
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: inherit;
+
+  align-content: center;
+  font-size: 17px;
+  margin: 5px 0px 5px 0px;
+}
+.triptych-main li a {
+  color: greenyellow;
+  align-items: left;
+  align-content: left;
+  justify-content: left;
+  text-align: center;
+}
+.triptych-left {
+  padding: 20px;
+  width: 33%;
+  padding-left: 20px;
+  margin: 0px 5px 0px 0px;
+}
+.triptych-center {
+  width: 33%;
+  padding-left: 20px;
+  margin: 0px 5px 0px 5px;
+  background-color: inherit;
+}
+.triptych-right {
+  width: 33%;
+  padding-left: 20px;
+  margin: 0px 0px 0px 5px;
+}
+
+/* Callback form */
+.credit-card-form {
+  width: 70%;
+  padding: 20px 0;
+}
+
+.credit-card-form label {
+  /* by default labels are inline  */
+  /* we want them block here */
+  display: block;
+  margin-bottom: 5px;
+}
+.credit-card-form .form-control {
+  margin-bottom: 15px;
+}
+.credit-card-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+
+  border: #f5f5f5 1px solid;
+}
+
+.credit-card-form input:focus {
+  outline-color: #d34a19;
+}
+.credit-card-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+.contact {
+  background-color: rgb(64, 65, 59);
+  color: wheat;
+  font-weight: 600;
+  margin-top: 60px;
+}
+.accepted-card {
+  color: rgb(216, 195, 195);
+  padding: 10px;
+}
+
+/* javaScript-class
+ */
+.javaScript-class {
+  /* flex-direction: column; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 100vh;
+  /* font-size: 47px; */
+  background-color: rgb(219, 203, 186);
+  padding: 30px 10px 40px 10px;
+  margin: 70px 10px 40px 10px;
+}
+
+.big-button {
+  cursor: pointer;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  padding: 25px 30px;
+  /* color: black; */
+  background-color: rgb(148, 124, 124);
+  border: seagreen solid 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 15px 25px 0px 25px;
+}
+
+.big-button:hover {
+  opacity: 0.8;
+}
+.javaScript-secondary-class {
+  cursor: pointer;
+  padding: 15px;
+  /* border-bottom: seagreen solid 2px; */
+  background-color: rgb(187, 134, 134);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+.randomaized-words {
+  /* display: flex; */
+  flex-direction: column;
+  /* width: 100%; */
+
+  /* height: 100px; */
+  border: solid rgb(114, 109, 109) 2px;
+  margin: 20px;
+}
+.randomaized-words input {
+  width: 85%;
+  padding: 4px;
+  height: 40px;
+
+  border: #f5f5f5 1px solid;
+}

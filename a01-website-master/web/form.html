@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Form</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/form.css"> -->
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar top">
+      <ul>
+        <li>
+        <li> <a href="/web/page.html">Home</a> </li>
+        <li> <a href="/web/image.html">Image</a> </li>
+        <li> <a href="/web/form.html">Form</a> </li>
+        <li> <a href="/web/typography.htm"> Typography</a> </li>
+        <li> <a href="/web/table.html">Table</a> </li>
+        <li> <a href="/web/column2.html">Column2</a> </li>
+        <li> <a href="/web/column3.html">column3</a> </li>
+        <li> <a href="/web/responsive.html">Responsive</a> </li>
+        <li> <a href="/web/JavaScript.html">javascript</a> </li>
+
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section id="contact" class="contact flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="/web/img/credit-card.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-ligh">
+            <h2>Credit card details</h2>
+            <form action="" class="credit-card-form">
+              <div class="form-control">
+                <div>
+                  <label for="fname">Accepted Cards</label>
+                  <i class="accepted-card fab fa-cc-visa fa-4x"></i>
+                  <i class="accepted-card fab fa-cc-mastercard fa-4x"></i>
+                  <i class="accepted-card fab fa-cc-amex fa-4x"></i>
+                  <i class="accepted-card fab fa-bitcoin fa-4x"></i>
+                </div>
+
+                <div class="form-control">
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John Doe">
+                </div>
+                <div class="form-control">
+                  <span class="validity">sdfdf</span>
+                  <input id="ticketNum" type="text" name="ticketNum" list="defaultNumbers">
+                  <datalist id="defaultNumbers">
+                    <option value="Master Card">
+                    <option value="PayPal">
+                    <option value="American Express">
+                    <option value="Visa">
+                    <option value="Bitcoin">
+                  </datalist>
+                </div>
+                <div class="form-control">
+                  <label for="ccn">Credit Card Number:</label>
+                  <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+                    maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                </div>
+
+                <!-- *************** -->
+                <div class="form-control">
+                  <label for="start">Valid Month & Year:</label>
+                  <input type="month" id="start" name="start" min="2018-03" value="2020-09">
+                </div>
+                <div class="form-control">
+                  <label for="cvv">CVV</label>
+                  <input type="number" id="cvv" name="cvv" min="001" max="999" placeholder="352">
+                </div>
+
+                <div class="form-control">
+                  <label for="ccn">Amount to be drawn from the card:</label>
+                  <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+                    maxlength="5" placeholder="Max amount 99 999">
+
+                </div>
+
+
+                <!-- input:submit enter -->
+                <input type="submit" value="Check out" id="submit" class="btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+  <footer class="footer bg-dark">
+    <h2>Contact details</h2>
+    <p>Author: Rashed Qazizada<br>
+      <a href="rq222ah@student.lnu.se">rq222ah@student.lnu.se</a></p>
+    <div>
+      <a href="https://coursepress.lnu.se/kurs/introduction-to-web-programming/" target="_blank"><i> Course
+          page</i></a>
+      <a href="https://gitlab.lnu.se/1dv525/student/rq222ah/a00-report-page/-/tree/master/web" target="_blank"><i>
+          GitLap
+          project</i></a>
+    </div>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The responsive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+
+
+
+
+    /* Smartphones with max width 500px */
+    @media(max-width: 500px) {
+      body {
+        background: red;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+
+      }
+
+      .navbar ul {
+        margin-bottom: 10px;
+
+      }
+
+      /* navbar menu */
+      .navbar ul a {
+        padding: 5px;
+        font-size: 8px;
+        margin-top: 20px;
+        color: lime;
+
+
+      }
+
+      .col3-aside-main-header {
+        flex-direction: column;
+
+        margin: 0px 5px 20px 5px;
+      }
+
+      .col3-aside-widest {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+
+        border: blueviolet solid 2px;
+      }
+
+      .col3-aside-widest h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        /* color: green; */
+      }
+
+      .col3-aside-widest p {
+        text-align: justify;
+        font-size: 16px;
+      }
+
+      .col3-aside-left-image {
+        height: 500px;
+        width: 450px;
+      }
+
+      .col3-aside-right-image {
+        height: 500px;
+        width: 450px;
+      }
+
+
+      .triptych-main {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5px;
+
+      }
+
+      .triptych-left {
+        width: 300px;
+
+      }
+
+      .triptych-main ul li a {
+        color: inherit;
+        font-size: 12px;
+        text-align: left;
+      }
+
+      .triptych-widest {
+        width: 100px;
+      }
+
+      .triptych-right {
+        margin: 0px 0px 0px 0px;
+      }
+
+      .footer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        margin-top: 8px;
+
+
+      }
+
+      .footer a {
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .footer a:hover {
+        color: #e21d1d;
+      }
+
+      .footer h2 {
+        font-size: 15px;
+      }
+
+
+    }
+
+
+
+    /* Tablet or ipad */
+    /* For the tablet i need to have min and max
+        because it needs to keep in the exact pixel
+          something different we tablets and smartphone */
+    @media(min-width: 501px) and (max-width: 768px) {
+      body {
+        background: blue;
+        justify-content: center;
+        text-align: center;
+
+      }
+
+
+
+      /* navbar menu */
+      .navbar ul a {
+        padding: 5px;
+        font-size: 12px;
+
+      }
+
+      .col3-aside-main-header {
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0px 5px 20px 5px;
+      }
+
+      .col3-aside-widest {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+
+        border: blueviolet solid 2px;
+      }
+
+      .col3-aside-widest h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .col3-aside-widest p {
+        text-align: justify;
+        font-size: 16px;
+      }
+
+      .col3-aside-left-image {
+        height: 600px;
+        width: 100%;
+      }
+
+      .col3-aside-right-image {
+        height: 600px;
+        width: 100%;
+      }
+
+
+      .triptych-main {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5px;
+
+      }
+
+      .triptych-main ul li a {
+        color: inherit;
+        font-size: 16px;
+        text-align: left;
+      }
+
+      .footer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        background-color: rgb(61, 61, 58);
+        margin-top: 8px;
+      }
+
+      .footer a {
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .footer a:hover {
+        color: #e21d1d;
+      }
+
+      .footer h2 {
+        font-size: 15px;
+      }
+
+    }
+
+    /* Min width 769 max 1200 widescreen left */
+    @media(min-width: 769px) and (max-width: 1200px) {
+      body {
+        background: green;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+      }
+
+      /* navbar menu */
+      .navbar ul a {
+        padding: 8px;
+        font-size: 15px;
+      }
+
+      .col3-aside-main-header {
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0px 5px 20px 5px;
+      }
+
+      .col3-aside-widest {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+
+        border: blueviolet solid 2px;
+      }
+
+      .col3-aside-widest h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .col3-aside-widest p {
+        text-align: justify;
+        font-size: 18px;
+      }
+
+      .col3-aside-left-image {
+        height: 600px;
+        width: 100%;
+      }
+
+      .col3-aside-right-image {
+        height: 600px;
+        width: 100%;
+      }
+
+
+      .triptych-main {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5px;
+
+      }
+
+
+      .triptych-main ul li a {
+        color: inherit;
+        font-size: 16px;
+        text-align: left;
+      }
+
+
+      .footer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        background-color: rgb(96, 161, 214);
+        margin-top: 8px;
+
+
+      }
+
+      .footer a {
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .footer a:hover {
+        color: #e21d1d;
+      }
+
+      .footer h2 {
+        font-size: 15px;
+      }
+
+
+    }
+
+    /* Min width 1201 max 2000 widescreen left */
+    @media(min-width: 1201px) and (max-width: 2000px) {
+      body {
+        background: gray;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+      }
+
+      /* navbar menu */
+      .navbar ul a {
+        padding: 8px;
+        font-size: 20px;
+      }
+
+      .col3-aside-main-header {
+        align-items: center;
+
+        margin: 0px 5px 20px 5px;
+      }
+
+      .col3-aside-widest {
+        width: 1000px;
+        padding: 10px;
+        margin-top: 20px;
+
+        border: blueviolet solid 2px;
+      }
+
+      .col3-aside-widest h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(29, 39, 13);
+      }
+
+      .col3-aside-widest p {
+        text-align: justify;
+        font-size: 18px;
+        color: rgb(13, 14, 13);
+      }
+
+      .col3-aside-left-image {
+        width: 500px;
+      }
+
+      .col3-aside-right-image {
+        width: 500px;
+      }
+
+
+      .triptych-main {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5px;
+
+      }
+
+
+      .triptych-main ul li a {
+        color: inherit;
+        font-size: 16px;
+        text-align: left;
+      }
+
+
+      .footer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        background-color: rgb(41, 39, 39);
+        margin-top: 8px;
+
+
+      }
+
+      .footer a {
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .footer a:hover {
+        color: #c5bfbf;
+      }
+
+      .footer h2 {
+        font-size: 15px;
+      }
+
+
+    }
+
+
+    /* max height */
+    /* Smartphones widescreen  */
+    @media(max-height:500px) {
+      body {
+        background: orange;
+        /* width: 600px; */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        width: 100%;
+
+      }
+
+
+
+      /* navbar menu */
+      .navbar ul a {
+        padding: 5px;
+        font-size: 8px;
+        margin-top: 20px;
+        color: inherit;
+      }
+
+      .col3-aside-main-header {
+        flex-direction: column;
+
+        margin: 0px 5px 20px 5px;
+      }
+
+      .col3-aside-widest {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+
+        border: blueviolet solid 2px;
+      }
+
+      .col3-aside-widest h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .col3-aside-widest p {
+        text-align: justify;
+        font-size: 16px;
+      }
+
+      .col3-aside-left-image {
+        height: 500px;
+        width: 450px;
+      }
+
+      .col3-aside-right-image {
+        height: 500px;
+        width: 450px;
+      }
+
+
+      .triptych-main {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5px;
+
+      }
+
+
+
+      .triptych-main ul li a {
+        color: inherit;
+        font-size: 12px;
+        text-align: left;
+      }
+
+
+
+      .footer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        margin-top: 8px;
+        background-color: rgb(68, 73, 61);
+
+
+      }
+
+      .footer a {
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .footer a:hover {
+        color: #e21d1d;
+      }
+
+      .footer h2 {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar top">
+    <ul>
+      <li>
+      <li> <a href="/web/page.html">Home</a> </li>
+      <li> <a href="/web/image.html">Image</a> </li>
+      <li> <a href="/web/form.html">Form</a> </li>
+      <li> <a href="/web/typography.htm"> Typography</a> </li>
+      <li> <a href="/web/table.html">Table</a> </li>
+      <li> <a href="/web/column2.html">Column2</a> </li>
+      <li> <a href="/web/column3.html">column3</a> </li>
+      <li> <a href="/web/responsive.html">Responsive</a> </li>
+      <li> <a href="/web/JavaScript.html">javascript</a> </li>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <main>
+      <aside class="col3-aside-main-header">
+        <aside class="col3-aside-left col3-aside-left-image">
+          <p>aside left</p>
+        </aside>
+        <article class="col3-aside-widest">
+          <h1>Some Test here widest-column</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam reiciendis a deleniti maiores eos adipisci
+            temporibus voluptas porro neque alias quisquam iste eaque nesciunt vero quia molestiae non quis, autem amet
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit explicabo neque molestiae tenetur
+            deserunt
+            excepturi labore odio. Exercitationem cupiditate atque nostrum animi necessitatibus cumque laudantium earum
+            ratione, qui minus obcaecati praesentium mollitia totam veniam, temporibus quae esse nobis impedit dolorem
+            similique voluptate delectus quasi! Pariatur autem asperiores facilis, voluptatem nostrum odit ab
+            dignissimos
+            expedita repellat fugit? Ea fuga ipsa quod quam sequi quasi sunt. Maiores inventore autem deserunt eius.
+            Veniam provident, minima incidunt nam totam impedit minus qui corrupti tempore eos id, fugiat mollitia vitae
+            aliquam ad dolor in consectetur illum adipisci dolorem placeat dolore laborum voluptate soluta? Tempora?
+            voluptates debitis corrupti. A aliquam alias placeat eligendi numquam, esse ratione? Expedita voluptates
+            sapiente accusantium non animi aliquid tempore ipsam accurem consequuntur fuga
+            praesentium fugit assumenda nesciunt. Iusto, id molestias! Maiores non eos.
+          </p>
+
+
+        </article>
+        <aside class="col3-aside-right col3-aside-right-image">
+          <p>aside right</p>
+
+        </aside>
+      </aside>
+
+    </main>
+    <!-- triptych -->
+    <aside class="triptych-main bg-primary">
+      <aside class="triptych-left ">
+        <ul>
+
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN HTML
+              reference</a>
+          </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS reference</a>
+          </li>
+          <li> <a href="https://www.w3.org/2009/cheatsheet/#autocomplete" target="_blank">W3C Cheetsheat</a>
+          </li>
+
+        </ul>
+      </aside>
+      <!-- HTML, CSS AND UNICORN VALIDATOR -->
+      <aside class="triptych-center bg-light">
+        <!-- <li>center</li> -->
+        <ul>
+          <li> <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a>
+          </li>
+          <li><a href="https://validator.w3.org/" target="_blank">HTML validator </a>
+          </li>
+          <li> <a href="https://validator.w3.org/" target="_blank">UNICORN validator</a>
+          </li>
+
+
+
+
+        </ul>
+      </aside>
+      <aside class="triptych-right">
+        <!-- <li>right</li> -->
+        <ul>
+          <li> <a href="https://www.w3schools.com/html/" target="_blank">W3C html</a>
+          </li>
+          <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3C css </a>
+          </li>
+
+
+
+
+        </ul>
+      </aside>
+
+    </aside>
+    <footer class="footer bg-secondaryfooter">
+      <h2>Contact details</h2>
+      <p>Author: Rashed Qazizada<br>
+        <a href="rq222ah@student.lnu.se">rq222ah@student.lnu.se</a></p>
+
+      <ul>
+        <a href="https://coursepress.lnu.se/kurs/introduction-to-web-programming/" target="_blank"><i class="btn">
+            Course
+            page</i></a>
+        <a href="https://gitlab.lnu.se/1dv525/student/rq222ah/a00-report-page/-/tree/master/web" target="_blank"><i
+            class="btn">
+            GitLap
+            project</i></a>
+      </ul>
+    </footer>
+
+
+
+</body>
+
+</html>
