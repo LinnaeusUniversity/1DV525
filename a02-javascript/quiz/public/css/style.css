@@ -1,0 +1,83 @@
+/* importing fonts from google
+    fonts.google.com
+    fonts name open Sans select light 300 and regular 400 then click Embed and import style format */
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+    /* A02 */
+    /* Rashed Qazizada */
+    /* reset everything */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background: rgb(131, 129, 127);
+  align-content: center; 
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  background-position: center;
+}
+
+input[type=text] {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+}
+
+.icon {
+  background: red;
+}
+
+.content {
+  background: rgb(197, 184, 184);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  padding:10px;
+}
+
+#quiz-content {
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+p {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#radioBtnAlternatives {
+  display: block; 
+  margin-bottom: 20px;
+}
+
+#btn {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+}
+
+#timer {
+  font-size: 20px;
+  color: rgb(196, 38, 38);
+}

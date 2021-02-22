@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman Home page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./web/css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+  <nav class="navbar top">
+    <ul>
+      <li><a href="hangman.html" id="hangTheMan">Hangman</a></li>
+      <li><a href="howtoPlayhangman.html">How to play Hangman</a></li>
+      <li><a href="#">Quiz</a></li>
+
+    </ul>
+  </nav>
+  <main class="main-page">
+    <aside class="hangman-svg-image-main-section">
+      <img id="hangmanHangPics" src="./web/img/0.png" alt="" />
+      <!-- https://topmeaning.com/english/cartoon -->
+    </aside>
+    <aside class="user-input-main-section">
+      <h1>Guess the Hidden word</h1>
+      <h1 id="answer"></h1>
+      <br />
+      <h2 id="word-dashes"></h2>
+      <br />
+      <h3>
+        Remaining life : <span id="mistakes">0</span> of
+        <span id="max-wrong-guesses"></span>
+      </h3>
+      <p>Guess a character below</p>
+      <div id="keyboardkeys"></div>
+      <br />
+      <button class="btn bg-primary" onclick="reset()">Reload</button>
+    </aside>
+  </main>
+
+  <script src="./web/js/hangman.js"></script>
+</body>
+
+</html>

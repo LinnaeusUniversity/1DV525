@@ -1,0 +1,143 @@
+/* importing fonts from google
+    fonts.google.com
+    fonts name open Sans select light 300 and regular 400 then click Embed and import style format */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+/* A02 */
+
+/* Rashed Qazizada */
+
+/* reset everything */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: rgb(143, 134, 134);
+  line-height: 1.6;
+}
+
+/* Remving the bullets */
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: 22px;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  background-color: #101411;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  padding: 10px 0 5px;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #28a745 solid 2px;
+}
+
+/* Main page */
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin: 80px 20px 30px;
+}
+
+.hangman-main-header p {
+  font-weight: 600;
+}
+
+/* Hangman main header section */
+
+.hangman-main-header {
+  /* background-color: rgb(138, 134, 134); */
+  width: 1024px;
+  height: 200px;
+  text-align: left;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* hangman svg image section */
+
+.hangman-svg-image-main-section {
+  width: 1024px;
+  height: 400px;
+  padding: 20px;
+  margin: 10px;
+  border: red dashed 2px;
+}
+
+img {
+  width: 250px;
+  height: 350px;
+}
+
+.user-input-main-section {
+  width: 1024px;
+  height: 501px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Button */
+
+.btn {
+  cursor: pointer;
+  display: inline;
+  padding: 20px;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: x-large;
+  background-color: rgb(168, 156, 148);
+}
+
+.bg-primary {
+  background: #4f5a50;
+  color: #fff;
+
+  /* color: red; */
+}
+
+.bg-secondary {
+  background: #5a5b5c;
+  color: #fff;
+}
