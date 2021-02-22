@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    margin: 8px auto;
+    background: #33333333;
+    width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    text-align: justify;
+}
+ .bg-dark{
+  background: #a09d9d;
+  color: #ffffff;
+}
+
+p {
+    font-size: 20px;
+}
+section ul li {
+list-style-type:square;
+font-size: 24px;
+}
+/* Navbar */
+#navbar{
+    background: #333333;
+    color: #ffffff;
+    padding:20px;
+    text-align: center;
+    border-radius: 15px;
+  
+  }
+  #navbar a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px ;
+    margin: 0 50px;
+    }
+  #navbar a:hover {
+    border-bottom: #9aa19c solid 2px;
+  }
+  img {
+    width: 100%;
+    margin:30px 0;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover{
+  color: #333333;
+}
+
+
+/* > * anything within there set this margin  */
+.footer .social > * {
+  margin-right: 30px;
+}

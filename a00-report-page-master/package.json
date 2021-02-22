@@ -1,0 +1,38 @@
+{
+  "name": "report-page",
+  "version": "1.0.0",
+  "description": "1DV525 - The report page",
+  "scripts": {
+    "lint": "npx eslint ./ || exit 0",
+    "lint:fix": "npx eslint ./ --fix || exit 0",
+    "test": "npx mocha --recursive || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv525/template/report-page.git"
+  },
+  "contributors": [
+    "Johan Leitet <johan.leitet@lnu.se>",
+    "Mats Loock <mats.loock@lnu.se>",
+    "Mikael Roos <romi223@lnu-se>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsdoc": "^27.0.7",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^8.0.1"
+  },
+  "eslintConfig": {
+    "extends": "@lnu",
+    "env": {
+      "mocha": true
+    }
+  }
+}
